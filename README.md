@@ -18,11 +18,11 @@ for i := 0; i < 5; i++ {
 
 Result is:
 ```
-password: 'Bread3.gottu8'
-password: 'cOmplEte4#sedbu2'
-password: 'print.ropde'
-password: 'Sign#moRmi'
-password: 'tasTe@Cegka'
+password: '2man.bipbu'
+password: 'wouNd1-tekba'
+password: '1wound#nikSo'
+password: 'test-poRna6'
+password: 'smile@mitdo8'
 ```
 
 You can pass your own dictionary:
@@ -36,11 +36,11 @@ for i := 0; i < 5; i++ {
 
 result:
 ```
-password: 'Testword-teske'
-password: 'TestWord#sedbu2'
-password: 'testwoRd.decbE'
-password: 'tesTword%gosDe'
-password: 'teStWOrd.nInda8'
+password: 'testWorD.1tupto'
+password: '0testwOrd%retru'
+password: 'TEstwoRd4-gorco'
+password: 'tEstWord-7kutma'
+password: '4testword.bekge'
 ```
 
 And you can tune some parameters with config struct:
@@ -48,8 +48,7 @@ And you can tune some parameters with config struct:
 cfg := pwgen.Defaults()
 cfg.Upper = true        // dont mix lower/uppercase
 cfg.UpperChance = 3     // uint [0-9]: chance to make character uppercase, for each letter
-cfg.Numbers = true      // to, or not to add random numbers
-cfg.NumChance = 5       // chance to add number, uint [0-9]
+cfg.Numbers = true      // to, or not to add random number to some part of password
 cfg.Delims = []string{"-","^","_"}  // customize delimeters
 ```
 
